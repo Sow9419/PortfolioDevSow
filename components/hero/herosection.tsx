@@ -155,7 +155,7 @@ export default function HeroSection() {
           >
             {/* L'image avec effet parallax */}
             <img
-              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+              src="/assets/images/profile.png"
               alt="Espace et technologie"
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
               style={{

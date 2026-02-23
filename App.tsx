@@ -1,10 +1,10 @@
-
 import React from "react";
 import Showcase from "./components/project/showcase";
 import EducationSection from "./components/education/education-section";
 import HeroSection from "./components/hero/herosection";
 import StackSection from "./components/stack/stack-section";
 import { FloatingIconsHero } from "./components/ui/floating-icons-hero-section";
+import ContactSection from "./components/contact/contact-section";
 
 const heroIcons = [
   { id: 1, name: "React", comment: "Frontend Core", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", className: "top-[15%] left-[10%]" },
@@ -33,6 +33,7 @@ export default function App() {
       </div>
       <StackSection />
       <EducationSection />
+      <ContactSection />
     </div>
   );
 }

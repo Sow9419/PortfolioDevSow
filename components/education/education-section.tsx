@@ -116,7 +116,7 @@ export default function EducationSection() {
   ]
 
   return (
-    <section className="relative bg-neutral-950 py-20">
+    <section className="relative bg-neutral-950 py-12">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <p className="mb-3 text-xs font-semibold tracking-widest text-white/50">
           FORMATION
