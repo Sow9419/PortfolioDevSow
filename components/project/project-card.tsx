@@ -49,8 +49,8 @@ export default function ProjectCard({
               alt={title}
               className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
             />
-            {/* Subtle vignette */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/30" />
+            {/* Gradient overlay */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80" />
           </div>
 
           {/* Top-left tags */}
@@ -78,7 +78,7 @@ export default function ProjectCard({
                 className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-sm font-medium backdrop-blur transition-colors hover:bg-white/20 self-start sm:self-auto text-white"
                 aria-label={`Open case study: ${title}`}
               >
-                Case study
+                Voir le projet
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>

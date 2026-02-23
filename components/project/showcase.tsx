@@ -11,14 +11,24 @@ import RevealOnView from "./reveal-on-view"
 export default function Showcase() {
   const projects = [
     {
-      title: "Plateforme de Data Intelligence en temps réel",
-      subtitle: "DÉVELOPPEUR DE SOLUTIONS DATA & AUTOMATISATION | Chez IABOC | Guinée Conakry | 2023-2024" ,
-      imageSrc: "/assets/images/IABOC.jpg",
-      tags: ["React.js", "Supabase", "n8n", "Outils interne", "PWA Mobile", "Dashboard Real-time"],
-      href: "#project-1",
-      priority: true,
+      title: "Cleansheet AI",
+      subtitle: "Moteur de transformation de données",
+      imageSrc: "/assets/images/cleansheet.png",
+      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "En cours de développement"],
+      href: "#project-4",
+      priority: false,
       gradientFrom: "#0f172a",
-      gradientTo: "#6d28d9",
+      gradientTo: "#10b981",
+    },
+    {
+      title: "DocGraph AI",
+      subtitle: "Une IA capable de transformer des rapports de 50 pages en cartes mentales interactives pour faciliter la prise de décision.",
+      imageSrc: "/assets/images/screen.png",
+      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "WebGPU", "En cours de développement"],
+      href: "#project-4",
+      priority: false,
+      gradientFrom: "#0f172a",
+      gradientTo: "#10b981",
     },
     {
       title: "Gestion de Boutique (POS)",
@@ -40,15 +50,16 @@ export default function Showcase() {
       gradientFrom: "#0b132b",
       gradientTo: "#5bc0be",
     },
+    
     {
-      title: "Cleansheet AI",
-      subtitle: "Moteur de transformation de données",
-      imageSrc: "/assets/images/cleansheet.png",
-      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "En cours de développement"],
-      href: "#project-4",
-      priority: false,
+      title: "Plateforme de Data Intelligence en temps réel",
+      subtitle: "DÉVELOPPEUR DE SOLUTIONS DATA & AUTOMATISATION | Chez IABOC | Guinée Conakry | 2023-2024" ,
+      imageSrc: "/assets/images/IABOC.jpg",
+      tags: ["React.js", "Supabase", "n8n", "Outils interne", "PWA Mobile", "Dashboard Real-time"],
+      href: "#project-1",
+      priority: true,
       gradientFrom: "#0f172a",
-      gradientTo: "#10b981",
+      gradientTo: "#6d28d9",
     },
   ]
 
