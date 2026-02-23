@@ -7,6 +7,7 @@ import DotGrid from "./dot-grid"
 import ProjectCard from "./project-card"
 import AnimatedHeading from "./animated-heading"
 import RevealOnView from "./reveal-on-view"
+import { b, button } from "framer-motion/client"
 
 export default function Showcase() {
   const projects = [
@@ -14,41 +15,45 @@ export default function Showcase() {
       title: "Cleansheet AI",
       subtitle: "Moteur de transformation de données",
       imageSrc: "/assets/images/cleansheet.png",
-      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "En cours de développement"],
+      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "SAAS"],
       href: "#project-4",
       priority: false,
       gradientFrom: "#0f172a",
       gradientTo: "#10b981",
+      buttonText: "Bientôt disponible",
     },
     {
       title: "DocGraph AI",
       subtitle: "Une IA capable de transformer des rapports de 50 pages en cartes mentales interactives pour faciliter la prise de décision.",
       imageSrc: "/assets/images/screen.png",
-      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "WebGPU", "En cours de développement"],
+      tags: ["IA", "Gemini", "Genkit", "Next.js", "Supabase", "WebGPU", "SAAS"],
       href: "#project-4",
       priority: false,
       gradientFrom: "#0f172a",
       gradientTo: "#10b981",
+      buttonText: "Bientôt disponible",
     },
     {
       title: "Gestion de Boutique (POS)",
       subtitle: "Système complet inspiré de Shopify",
       imageSrc: "/assets/images/coumbty.png",
       tags: ["React", "Next.js", "Supabase", "E-commerce", "Projet clients"],
-      href: "#project-2",
+      href: "https://combatyshoping.vercel.app/",
       priority: false,
       gradientFrom: "#111827",
       gradientTo: "#2563eb",
+      buttonText: "Voir le projet",
     },
     {
       title: "Suivi de Livraison d'Essence",
       subtitle: "Application logistique temps réel",
       imageSrc: "/assets/images/niang.png",
       tags: ["Logistique", "Temps Réel", "Architecture Événementielle", "Projet Clients"],
-      href: "#project-3",
+      href: "https://niangservice.netlify.app/",
       priority: false,
       gradientFrom: "#0b132b",
       gradientTo: "#5bc0be",
+      buttonText: "Voir le projet",
     },
     
     {
@@ -60,6 +65,7 @@ export default function Showcase() {
       priority: true,
       gradientFrom: "#0f172a",
       gradientTo: "#6d28d9",
+      buttonText: "Privé",
     },
   ]
 
@@ -99,7 +105,7 @@ export default function Showcase() {
                   <div className="mt-4 flex flex-wrap items-center gap-3">
                     <Button asChild className="rounded-full bg-white text-black hover:bg-white/90">
                       <a href="mailto:dramanesow20@gmail.com">
-                        Me contacter
+                       Me contacter
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
@@ -130,6 +136,7 @@ export default function Showcase() {
                 tags={p.tags}
                 href={p.href}
                 priority={p.priority}
+                buttonText={p.buttonText}
                 gradientFrom={p.gradientFrom}
                 gradientTo={p.gradientTo}
                 imageContainerClassName="lg:h-full"

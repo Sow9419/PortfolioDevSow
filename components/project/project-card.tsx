@@ -16,6 +16,7 @@ type Props = {
   imageContainerClassName?: string
   containerClassName?: string
   revealDelay?: number
+  buttonText?: string
   key?: string
 }
 
@@ -31,6 +32,7 @@ export default function ProjectCard({
   imageContainerClassName,
   containerClassName,
   revealDelay = 0,
+  buttonText = "View Project",
 }: Props) {
   return (
     <article className={cn("group relative", containerClassName)}>
@@ -78,7 +80,7 @@ export default function ProjectCard({
                 className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-sm font-medium backdrop-blur transition-colors hover:bg-white/20 self-start sm:self-auto text-white"
                 aria-label={`Open case study: ${title}`}
               >
-                Voir le projet
+                {buttonText}
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
